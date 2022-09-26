@@ -1,0 +1,10 @@
+function (e, valor){
+    document.querySelector("[ng-reflect-name='labelFirstName']").value = valor.split("-")[0];
+    document.querySelector("[ng-reflect-name='labelLastName']").value = valor.split("-")[1];
+    document.querySelector("[ng-reflect-name='labelCompanyName']").value = valor.split("-")[2];
+    document.querySelector("[ng-reflect-name='labelRole']").value = valor.split("-")[3];
+    document.querySelector("[ng-reflect-name='labelAddress']").value = valor.split("-")[4];
+    document.querySelector("[ng-reflect-name='labelEmail']").value = valor.split("-")[5];
+    document.querySelector("[ng-reflect-name='labelPhone']").value = valor.split("-")[6];
+    document.querySelector("[value='Submit']").click();
+}
